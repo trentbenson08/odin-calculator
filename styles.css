@@ -12,7 +12,7 @@ body{
 #container{
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
+    border: 1.5px solid black;
 }
 #screen{
     display: flex;
@@ -20,7 +20,7 @@ body{
     justify-content: end;
     align-items: center;
     border: 1px solid black;
-    border-bottom: .5px;
+    border-bottom: 1.5px solid black;
     width: 144px;
     height: 45px;
     color: white;
@@ -78,6 +78,7 @@ body{
     align-items: center;
 
 }
-#zero.btn{
+.zero.btn{
     width: 72px;
+
 }
