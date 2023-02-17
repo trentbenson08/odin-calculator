@@ -1,6 +1,4 @@
 
-
-
 function main(){
     const button = document.querySelectorAll('.btn');
     const screenVal = document.querySelector('#screenVal');
@@ -11,7 +9,6 @@ function main(){
     button.forEach(btn =>{
         btn.addEventListener('click', (e) =>{
             let ei = e.target.getAttribute('id');
-
             if(ei === '_clear'){
                 input ='';
                 inputArr =[];
@@ -28,13 +25,11 @@ function main(){
             }
             else if(ei[0] === '_' && parseFloat(input)){
                 inputArr.push(parseFloat(input));
-                dotCount = 0;
-                
+                dotCount = 0;                
                 if(ei === '_eval'){
                     screenVal.textContent = evaluate(inputArr);
                     inputArr = [];
                     input = '';
-
                 }
                 else{
                     inputArr.push(ei);
@@ -42,11 +37,6 @@ function main(){
                     screenVal.textContent = input;
                 }
             }
-
-            console.log(inputArr);
-
-
-
         })
     })
 }
@@ -69,7 +59,5 @@ function evaluate(arr){
     }
     return total
 }
-
-//evaluate()
 
 main()
